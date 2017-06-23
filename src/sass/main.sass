@@ -1,0 +1,826 @@
+@import _mixins
+
+//----------------------------------
+// DEV
+//----------------------------------
+.chromeperfectpixel-initial-block iframe,
+#chromeperfectpixel-supported-by
+	display: none !important
+#__bs_notify__
+	display: none !important
+	opacity: 0 !important
+
+//----------------------------------
+// END DEV
+//----------------------------------
+
+
+body
+	// &::-webkit-scrollbar
+
+
+//----------------------------------
+// TEST
+//----------------------------------
+section.test-block
+	margin: 100px 0
+//----------------------------------
+// END TEST
+//----------------------------------
+
+
+
+.top-line
+	background: #56b5de
+	padding-top: 16px
+	padding-bottom: 5px
+	@media #{$media-xs-down}
+		text-align: center
+	.logo
+		padding-left: 122px
+		padding-top: 0
+		float: left
+		min-height: 72px
+		position: relative
+		@media #{$media-xs-down}
+			float: none
+			display: inline-block
+			margin-bottom: 20px
+			padding-left: 72px
+		.image-holder
+			width: 64px
+			position: absolute
+			top: 1px
+			left: 51px
+			@media #{$media-md-down}
+				width: 52px
+			@media #{$media-xs-down}
+				left: 0
+		h2
+			margin: 0
+			text-transform: uppercase
+			font-size: 2.3rem
+			color: #fff
+			line-height: 1em
+			font-family: Roboto, sans-serif
+		p
+			font-size: 0.86rem
+			margin: 0
+			line-height: 1.5em
+	.navigation
+		float: right
+		padding-right: 39px
+		@media #{$media-xs-down}
+			float: none
+			padding: 0
+		.numbers
+			vertical-align: middle
+			margin-right: 30px
+			@media #{$media-xs-down}
+				display: block
+				margin: 0
+				margin-bottom: 40px
+			li
+				margin-bottom: 6px
+				a
+					font-size: 1.3em
+					display: inline-block
+		.order-btn
+			display: inline-block
+			vertical-align: middle
+			background: #f9593a
+			font-size: 1.4rem
+			padding: 20px 39px
+			border-radius: 47px
+			text-transform: uppercase
+			font-weight: bold
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+			margin-top: -13px
+			@media #{$media-xs-down}
+				margin-bottom: 20px
+			&:hover
+				background: #ccc
+.main-display
+	padding-top: 14px
+	padding-bottom: 22px
+	text-align: center
+	.text-holder
+		vertical-align: middle
+		padding-left: 42px
+		padding-right: 45px
+		@media #{$media-sm-down}
+			padding-left: 20px
+			padding-right: 20px
+		h3
+			font-size: 5.2rem
+			text-transform: uppercase
+			line-height: 1em
+			margin-bottom: 0
+			@media #{$media-xs-down}
+				font-size: 3.2rem
+		h4
+			font-size: 3.9rem
+			font-weight: 100
+			line-height: 1em
+			margin: 0
+			margin-top: 2px
+			@media #{$media-xs-down}
+				font-size: 2.5rem
+		.btn-holder
+			text-align: center
+			margin-top: 34px
+	.image-holder
+		&.first-img
+			max-width: 305px
+			margin-left: 59px
+			vertical-align: middle
+			@media #{$media-sm-down}
+				max-width: 155px
+				margin-left: 0
+			@media #{$media-xs-down}
+				display: block
+				margin: 0 auto
+		&.sec-img
+			max-width: 260px
+			vertical-align: middle
+			@media #{$media-sm-down}
+				max-width: 170px
+			@media #{$media-xs-down}
+				display: none
+
+.estimate
+	background: url(../img/content/group-6.jpg) 50% 50% no-repeat
+	background-size: cover
+	text-align: center
+	padding-top: 38px
+	padding-bottom: 38px
+	&.type-3
+		background-image: url(../img/content/group-7.jpg)
+	&.type-2
+		background-image: url(../img/content/group-8.jpg)
+	h4
+		line-height: 1.2em
+		margin-bottom: 6px
+	.image-holder
+		width: 68px
+		display: inline-block
+		margin-bottom: 15px
+	.btn-holder
+		margin-top: 10px
+	.social-list
+		margin-top: 30px
+		.image-holder
+			width: 68px
+			height: 68px
+			@media #{$media-xs-down}
+				width: 48px
+				height: 48px
+.motivation
+	padding-top: 40px
+	background: url(../img/content/circular-saw.png) 50% 100% no-repeat
+	background-size: 740px
+	padding-bottom: 41px
+	.inline-layout
+		&.col-2 > *
+			@media #{$media-ls-down}
+				width: 100%
+
+	h3
+		text-align: center
+		font-size: 2.6rem
+		line-height: 1.4em
+	.motivations-list
+		max-width: 1060px
+		margin: 0 auto
+		li
+			padding: 5px 25px
+		.image-holder
+			width: 75px
+			height: 75px
+			margin: 0 auto
+		.text-holder
+			margin-top: 29px
+			height: 181px
+			overflow: hidden
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 0
+				height: 40px
+				width: 100%
+				background: rgba(231,56,39,0)
+				background: -moz-linear-gradient(top, rgba(231,56,39,0) 0%, rgba(255,255,255,1) 100%)
+				background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(231,56,39,0)), color-stop(100%, rgba(255,255,255,1)))
+				background: -webkit-linear-gradient(top, rgba(231,56,39,0) 0%, rgba(255,255,255,1) 100%)
+				background: -o-linear-gradient(top, rgba(231,56,39,0) 0%, rgba(255,255,255,1) 100%)
+				background: -ms-linear-gradient(top, rgba(231,56,39,0) 0%, rgba(255,255,255,1) 100%)
+				background: linear-gradient(to bottom, rgba(231,56,39,0) 0%, rgba(255,255,255,1) 100%)
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#ffffff', GradientType=0 )
+			h5
+				text-align: center
+				font-size: 1.6rem
+				font-weight: 100
+	.btn-holder
+		margin-top: 205px
+		text-align: center
+
+.how-it-works
+	padding-top: 56px
+	padding-bottom: 19px
+	.inline-layout
+		&.col-5 > *
+			@media #{$media-xs-down}
+				width: 50%
+			@media #{$media-ls-down}
+				width: 100%
+
+	h3
+		text-align: center
+	.btn-holder
+		text-align: center
+	.how-list
+		max-width: 1180px
+		margin: 43px auto
+		li
+			padding: 0 20px
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				top: 88px
+				left: 0
+				height: 2px
+				width: 100%
+				background: #2b7eba
+			&:first-child
+				&:after
+					left: auto
+					right: 0
+					width: 50%
+					@media #{$media-ls-down}
+						width: 100%
+			&:last-child
+				&:after
+					right: auto
+					left: 0
+					width: 50%
+					@media #{$media-ls-down}
+						width: 100%
+			.image-holder
+				width: 44px
+				margin: 12px auto
+				height: 50px
+				&.phone-img
+					width: 26px
+			.number
+				text-align: center
+				span
+					display: inline-block
+					margin: 0 auto
+					height: 30px
+					width: 30px
+					border-radius: 50%
+					border: 1px solid #ffc80a
+					text-align: center
+					line-height: 30px
+					color: #2b7eba
+					background: #fff
+					position: relative
+					z-index: 2
+			.text-holder
+				h5
+					text-align: center
+					font-size: 1rem
+					font-weight: 100
+					font-family: Roboto, sans-serif
+					letter-spacing: 4px
+					color: #000
+					margin-top: 10px
+					margin: 0px
+					margin-top: 11px
+				p
+					margin-top: 15px
+					text-align: center
+					line-height: 1.5em
+					max-height: 63px
+					overflow: hidden
+
+.advanrages
+	padding-top: 56px
+	text-align: center
+	padding-bottom: 41px
+	.inline-layout
+		&.col-5 > *
+			@media #{$media-xs-down}
+				width: 50%
+			@media #{$media-ls-down}
+				width: 100%
+	h3
+		text-align: center
+		font-size: 2.6rem
+		line-height: 1em
+	.image-holder
+		width: 70px
+		height: 80px
+		display: inline-block
+		margin-bottom: 23px
+	.text-holder
+		height: 99px
+		overflow: hidden
+		h5
+			font-family: Roboto, sans-serif
+			color: #000
+			font-weight: 100
+			letter-spacing: 2px
+			text-transform: uppercase
+			margin-bottom: 16px
+	.btn-holder
+		margin-top: 36px
+	&.work-with
+		.inline-layout
+			&.col-3 > *
+				@media #{$media-xs-down}
+					width: 100%
+		li
+			padding: 15px
+		.wr-block
+			padding: 15px
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
+		.image-holder
+			width: 100%
+			height: 260px
+		.text-holder
+			height: 59px
+
+.comand-slider
+	background: rgba(42, 126, 186, 0.1)
+	.image-holder
+		height: 320px
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(42, 126, 186, 0.4)
+			opacity: 0.4
+			transition: opacity .8s
+	.text-holder
+		position: absolute
+		left: 0
+		bottom: -5px
+		color: #fff
+		transition: opacity .8s
+		font-weight: 700
+		width: 100%
+		padding: 10px 20px
+		background: rgba(42, 126, 186, 0.8)
+		overflow: hidden
+		white-space: nowrap
+		opacity: 0
+		text-transform: uppercase
+		z-index: 2
+		text-align: center
+		img
+			width: 20px
+			display: inline-block
+			position: absolute
+			top: 10px
+			left: 10px
+		span
+			display: inline-block
+			font-weight: 100
+	.owl-item
+		transform: scale(1)
+		&.center
+			transform: scale(1.3)
+			transition: transform .8s
+			z-index: 2
+			.image-holder
+				&:after
+					opacity: 0
+					transition: opacity .8s
+			.text-holder
+				bottom: 0px
+				transition: opacity .8s, bottom .8s
+				opacity: 1
+		// &.yellow
+		// 	.image-holder
+		// 		&:after
+		// 			background: red
+
+	.owl-stage-outer
+		padding: 50px 0
+	.owl-nav
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 100%
+		margin: 0
+		height: 50px
+	.owl-prev
+		left: 15px
+		height: 20px
+		width: 20px
+		background: url(../img/icons/arrow-left.svg) 50% 50% no-repeat
+	.owl-next
+		right: 0
+		transition: all .4s
+		background: url(../img/icons/arrow-right.svg) 50% 50% no-repeat
+	.owl-next,
+	.owl-prev
+		position: absolute
+		top: 0
+		height: 50px
+		width: 50px
+		position: absolute
+		right: 15px
+		border-radius: 4px
+		text-indent: -9999px
+	.owl-dots
+		display: none
+
+
+.equipment
+	padding-top: 56px
+	padding-bottom: 38px
+	.inline-layout
+		&.col-2 > *
+			@media #{$media-xs-down}
+				width: 100%
+	.image-wrap
+		margin-top: 21px
+		padding: 21px
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
+	.text-holder
+		margin-top: 18px
+		p
+			padding-left: 40px
+			position: relative
+			margin-left: 68px
+			margin-bottom: 25px
+			@media #{$media-xs-down}
+				margin-left: 0
+			&:before
+				content: ''
+				position: absolute
+				top: -5px
+				left: -8px
+				height: 30px
+				width: 30px
+				background: url(../img/icons/text-icon.svg) 50% 50% no-repeat
+
+.price
+	text-align: center
+	padding-top: 56px
+	padding-bottom: 40px
+	background: rgba(42, 126, 186, 0.1)
+	.btn-holder
+		margin-top: 42px
+	.scroll-holder
+		overflow: auto
+		padding-bottom: 10px
+	.scroll-inner
+		min-width: 800px
+		@media #{$media-md-down}
+			min-width: 605px
+	.prices
+		position: relative
+		padding-left: 180px
+		max-width: 985px
+		margin: 0 auto
+		margin-top: 52px
+		@media #{$media-md-down}
+			max-width: 784px
+		.first-list
+			position: absolute
+			top: 0
+			left: 0
+			width: 160px
+		ul
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
+			margin: 0 10px
+			width: 245px
+			@media #{$media-md-down}
+				width: 181px
+			li
+				padding: 20px 10px
+				font-size: 1.5rem
+				font-family: 'Arvo', sans-serif
+				color: #2b7eba
+				font-weight: bold
+				&:nth-child(odd)
+					background: #f1faff
+				&:nth-child(even)
+					background: #fff
+				&:first-child
+					color: #fff
+					text-transform: uppercase
+					height: 77px
+					display: table
+					width: 100%
+					span
+						display: table-cell
+						vertical-align: middle
+			&:nth-child(1)
+				li
+					font-weight: 100
+					&:first-child
+						background-image: linear-gradient(to left, #56b5de, #2b7eba)
+						font-weight: bold
+			&:nth-child(2)
+				li
+					&:first-child
+						background-image: linear-gradient(to left, #56b5de, #2b7eba)
+			&:nth-child(3)
+				li
+					&:first-child
+						background-image: linear-gradient(to left, #56b5de, #2b7eba)
+			&:nth-child(4)
+				li
+					&:first-child
+						background-image: linear-gradient(to left, #56b5de, #2b7eba)
+
+
+
+
+
+.persons-slider
+	text-align: center
+	padding-bottom: 9px
+	.text-holder
+		max-width: 688px
+		margin: 0 auto
+		font-size: 1.7rem
+		line-height: 2em
+		padding-top: 62px
+		font-family: 'Arvo', sans-serif
+		text-align: center
+		&:before
+			content: ''
+			position: absolute
+			top: 6px
+			left: 50%
+			transform: translateX(-50%)
+			height: 50px
+			width: 50px
+			background: url(../img/icons/sk-lo.svg) 50% 50% no-repeat
+	.image-wrap
+		display: inline-block
+		position: relative
+		padding-bottom: 28px
+		&:after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 1px
+			width: 100%
+			background: #2b7eba
+	.image-holder
+		height: 110px
+		width: 110px
+		border-radius: 50%
+		margin: 0 auto
+		margin-top: 43px
+	.name
+		margin-top: 30px
+		h5
+			font-size: 1.5rem
+		h6
+			margin: 13px 0
+			font-size: 0.9rem
+			font-family: Roboto, sans-serif
+			color: #9fa3a7
+			font-weight: 100
+	.slider-holder
+		max-width: 950px
+		margin: 0 auto
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			bottom: 115px
+			left: 0
+			height: 3px
+			width: 100%
+			background: #e8e9ed
+			@media #{$media-md-down}
+				bottom: 100px
+	.owl-nav
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 100%
+		margin: 0
+		height: 50px
+	.owl-prev
+		left: 15px
+		height: 20px
+		width: 20px
+		background: url(../img/icons/arrow-left.svg) 50% 50% no-repeat
+	.owl-next
+		right: 0
+		transition: all .4s
+		background: url(../img/icons/arrow-right.svg) 50% 50% no-repeat
+	.owl-next,
+	.owl-prev
+		position: absolute
+		top: 0
+		height: 50px
+		width: 50px
+		position: absolute
+		right: 15px
+		border-radius: 4px
+		text-indent: -9999px
+		@media #{$media-xs-down}
+			display: none !important
+	.owl-dots
+		display: none
+
+
+.contact-us
+	padding-top: 55px
+	background: #e8e8e8
+	padding-bottom: 34px
+	padding-bottom: 52px
+	text-align: center
+	background: url(../img/content/group-6.jpg) 50% 50% no-repeat
+	background-size: cover
+	.form-holder
+		max-width: 655px
+		margin: 0 auto
+		margin-top: 57px
+		@media #{$media-xs-down}
+			max-width: 355px
+	.inputs
+		padding-right: 32px
+		@media #{$media-xs-down}
+			padding: 0
+	input,
+	textarea
+		border: 1px solid #9b9b9b
+		position: relative
+		border-radius: 25px
+		padding: 14px 51px
+		margin: 0 auto
+		background: #fff
+		padding-left: 20px
+		width: 100%
+		margin-bottom: 18px
+		outline: none
+	textarea
+		margin-left: 11px
+		resize: none
+		height: 184px
+		@media #{$media-xs-down}
+			margin: 0
+	.btn-holder
+		text-align: center
+		@media #{$media-xs-down}
+			margin-top: 30px
+		.button
+			padding: 15px 70px
+	.inputs
+		@media #{$media-xs-down}
+			width: 100% !important
+.call-us
+	background: rgba(42, 126, 186, 0.1)
+	padding: 57px 0
+	.have-question
+		font-size: 2.6rem
+		text-align: right
+		font-family: 'Arvo', sans-serif
+		color: #2b7eba
+		vertical-align: middle
+		@media #{$media-md-down}
+			font-size: 1.6rem
+			text-align: left
+		@media #{$media-md-down}
+			display: block
+			text-align: center
+			width: 100%
+			margin-bottom: 10px
+		p
+			margin: 0
+		.image-holder
+			width: 50px
+			height: 50px
+			display: inline-block
+			vertical-align: middle
+			margin-right: 20px
+			@media #{$media-md-down}
+				width: 30px
+				height: 30px
+	.phone-number
+		text-align: right
+		vertical-align: middle
+		@media #{$media-md-down}
+			display: block
+			text-align: center
+			width: 100%
+		a
+			color: #2b7eba
+			font-size: 2.6rem
+			text-align: right
+			font-family: 'Arvo', sans-serif
+			@media #{$media-md-down}
+				font-size: 1.6rem
+
+
+
+.footer
+	.logo
+		padding-left: 122px
+		padding-top: 0
+		min-height: 72px
+		position: relative
+		@media #{$media-xs-down}
+			float: none
+			display: inline-block
+			margin-bottom: 20px
+			padding-left: 72px
+		.image-holder
+			width: 64px
+			position: absolute
+			top: 1px
+			left: 51px
+			@media #{$media-md-down}
+				width: 52px
+			@media #{$media-xs-down}
+				left: 0
+		h2
+			margin: 0
+			text-transform: uppercase
+			font-size: 2.3rem
+			color: #fff
+			line-height: 1em
+			font-family: Roboto, sans-serif
+		p
+			font-size: 0.86rem
+			margin: 0
+			line-height: 1.5em
+	.adress
+		padding-left: 40px
+		font-size: 1.4rem
+		color: #fff
+		font-family: 'Arvo', sans-serif
+		@media #{$media-xs-down}
+			padding-left: 0
+	.foot-nav
+		background-image: -webkit-linear-gradient(right, #56b5de, #2b7eba)
+		background-image: -o-linear-gradient(right, #56b5de, #2b7eba)
+		background-image: linear-gradient(to left, #56b5de, #2b7eba)
+		padding-top: 29px
+		padding-bottom: 10px
+		@media #{$media-xs-down}
+			text-align: center
+	.right-side
+		text-align: right
+		@media #{$media-xs-down}
+			width: 100%
+	.left-side
+		@media #{$media-xs-down}
+			width: 100%
+			display: inline-block
+	.social-list
+		display: inline-block
+		padding-left: 0
+		@media #{$media-xs-down}
+			width: 100%
+			text-align: center
+		ul
+			text-align: right
+			padding-right: 58px
+			margin: 0
+			display: inline-block
+			@media #{$media-xs-down}
+				padding-right: 0 
+		.image-holder
+			width: 68px
+			height: 68px
+			@media #{$media-md-down}
+				width: 48px
+				height: 48px
+			@media #{$media-xs-down}
+				width: 28px
+				height: 28px
+		.email
+			font-size: 1.4rem
+			color: #fff
+			font-family: 'Arvo', sans-serif
+			text-align: left
+			@media #{$media-xs-down}
+				text-align: center
+	.rights
+		background: #2b7eba
+		color: #fff
+		text-align: center
+		padding: 16px 0
+		a
+			text-decoration: underline
+		p
+			margin: 0

@@ -1,0 +1,410 @@
+@import _mixins
+
+//----------------------------------
+// order-modal
+//----------------------------------
+.order-modal,
+.mobile-modal
+	max-width: 590px
+	padding-top: 10px
+	position: relative
+	border: 1px solid #b0b0aa
+	@media #{$media-sm-down}
+		padding-left: 0
+		height: auto
+		padding-top: 40px
+	.order-table
+		padding-bottom: 14px
+	.scroll-holder
+		overflow: auto
+	.modal-close
+		position: absolute
+		top: 6px
+		right: 6px
+		height: 20px
+		width: 20px
+		background: url('../img/icons/modal-close.svg') 50% 50% no-repeat
+		background-size: cover
+	.order-head
+		a
+			height: 32px
+			text-align: center
+			line-height: 32px
+			text-transform: uppercase
+			font-size: 18px
+			background: transparent
+			color: #000
+			border-top: 1px solid #c7c3c3
+			border-bottom: 1px solid #c7c3c3
+			&.active
+				background-image: -webkit-linear-gradient(#434343, #232323)
+				background-image: -o-linear-gradient(#434343, #232323)
+				background-image: linear-gradient(#434343, #232323)
+				color: #fff
+				@media #{$media-sm-down}
+					border-top: 1px solid #434343
+	.order-block
+		@media #{$media-sm-down}
+			width: 100%
+			padding-bottom: 20px
+	.head
+		background: #ff4c4d
+		height: 41px
+		border: 1px solid white
+		text-align: center
+		text-transform: uppercase
+		font-size: 1.2em
+		line-height: 41px
+		color: #fff
+	.js-ship-type
+		.input-holder
+			display: none
+		&.samo
+			.select-holder
+				display: none
+			.input-holder
+				display: block
+	.order-row
+		height: 40px
+		position: relative
+		border: 1px solid #fff
+		&:nth-child(even)
+			background: #f4f4f4
+	.ship-type
+		.order-row
+			padding-left: 21px
+			label
+				padding-left: 26px
+				line-height: 40px !important
+				padding-left: 26px !important
+				font-size: 0.95em
+				white-space: nowrap
+				overflow: hidden
+				width: 100%
+				text-overflow: ellipsis
+				padding-right: 75px
+				display: inline-block
+		.status
+			position: absolute
+			top: 12px
+			right: 10px
+			text-transform: uppercase
+			font-size: 0.7em
+			color: red
+	.ship-data
+		.order-row
+			padding: 0 12px 6px 12px
+		input,
+		select
+			width: 100%
+			height: 32px
+			border-bottom: 1px solid #a29d9d
+			background: transparent
+			text-transform: uppercase
+			padding-left: 8px
+			outline: none
+		select
+			border: transparent
+			color: darkgrey
+		.select-holder
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				top: 16px
+				right: 6px
+				width: 0
+				height: 0
+				border-style: solid
+				border-width: 6px 6px 0 6px
+				border-color: #000000 transparent transparent transparent
+	.back-basket
+		padding-top: 20px
+		// padding-left: 20px
+		text-align: center
+		img
+			width: 19px
+			height: 23px
+			margin-right: 9px
+		span 
+			font-size: 0.95em
+			color: #ff4c4c
+			text-decoration: underline
+	.btn
+		text-align: center
+		.button
+			padding: 3px 14px
+			margin-top: 15px
+	.total
+		text-align: right
+		padding-right: 74px
+		font-size: 1.25em
+		text-transform: uppercase
+		font-weight: 600
+		padding-top: 21px
+		color: #9b9b9b
+		.num
+			color: #ff4c4c
+	.products-table
+		text-transform: uppercase
+		min-width: 760px
+		table
+			width: 100%
+		th
+			height: 40px
+			background: #ff4c4c
+			text-align: left
+			padding: 9px 15px
+			font-size: 1.2em
+			color: #fff
+			text-align: center
+			&:first-child
+				text-align: left
+		td
+			width: 100%
+		.back-basket
+			text-align: center
+			padding-left: 0
+			padding-top: 3px
+			.to-basket
+				font-size: 0.9em
+		.description
+			padding-left: 16px
+			font-size: 1.23em
+		.select-holder
+			width: 159px
+			text-align: center
+			.select-wrap
+				display: inline-block
+				width: 66px
+				height: 24px
+				border-bottom: 1px solid #000
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					top: 1px
+					right: 0
+					height: 23px
+					width: 24px
+					background: #ff4c4c
+					pointer-events: none
+				&:before
+					content: '\f107'
+					font-family: 'Fontawesome'
+					position: absolute
+					top: 2px
+					right: 0
+					height: 23px
+					width: 24px
+					font-size: 25px
+					color: #fff
+					z-index: 3
+					pointer-events: none
+				select
+					width: 100%
+					border: none
+					text-align: center
+					background: transparent
+					padding-right: 24px
+					outline: none
+					padding-left: 4px
+					color: #ff4c4c
+		.quan
+			width: 160px
+			text-align: center
+			.incr,
+			.dec
+				display: inline-block
+				width: 24px
+				height: 24px
+				background-color: #ff4c4c
+				vertical-align: middle
+				position: relative
+			input
+				display: inline-block
+				width: 35px
+				height: 24px
+				background-color: transparent
+				vertical-align: middle
+				text-align: center
+				outline: none
+			.incr
+				&:after
+					content: '+'
+					position: absolute
+					top: 0
+					right: 0
+					height: 24px
+					width: 24px
+					font-size: 25px
+					line-height: 24px
+					color: #fff
+			.dec
+				&:after
+					content: '_'
+					position: absolute
+					top: -9px
+					right: 0
+					height: 2px
+					width: 24px
+					font-size: 25px
+					line-height: 24px
+					color: #fff
+		.price
+			width: 159px
+			text-align: center
+			font-size: 1.2em
+			color: #ff4c4c
+			span
+				vertical-align: middle
+	.you-basket
+		padding: 21px 18px
+		padding-bottom: 12px
+		img
+			vertical-align: middle
+			width: 20px
+			margin-right: 14px
+		span
+			vertical-align: middle
+			font-size: 1.2em
+			text-transform: uppercase
+			display: inline-block
+.order-modal
+	padding-top: 30px
+	.mobile-modal
+		margin: 0 auto
+		display: none
+	&.call
+		.order-table
+			display: none
+		.mobile-modal
+			display: block
+.mobile-modal
+	max-width: 600px
+	height: 202px
+	padding-left: 150px
+	padding-top: 20px
+	@media #{$media-sm-down}
+		height: auto
+		padding: 10px
+	.call-icon
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 150px
+		background: #2b7eba
+		background-size: cover
+		padding: 54px 30px
+		@media #{$media-sm-down}
+			position: static
+			height: 70px
+			width: 70px
+			padding: 5px
+			margin: 0 auto
+		img
+			width: 100%
+	.text-holder
+		padding-left: 35px
+		padding-right: 60px
+		@media #{$media-sm-down}
+			padding: 0
+			margin-top: 20px
+		p
+			text-transform: uppercase
+			font-size: 1.2em
+			line-height: 1.4em
+			color: #2b7eba
+			text-align: center
+			@media #{$media-sm-down}
+				font-size: 1em
+		input
+			margin-top: 11px
+			width: 100%
+			border: 1px solid #000
+			font-size: 1.3em
+			border: 1px solid #9b9b9b
+			position: relative
+			border-radius: 25px
+			padding: 3px 21px
+			margin: 0 auto
+			background: #fff
+			width: 100%
+			margin-bottom: 10px
+			outline: none
+			&::-webkit-input-placeholder
+				font-size: 0.95em
+			&::-moz-placeholder
+				font-size: 0.95em
+			&:-moz-placeholder
+				font-size: 0.95em
+			&:-ms-input-placeholder
+				font-size: 0.95em
+		.btns
+			text-align: center
+			.button
+				padding: 10px 20px
+
+
+.thnks-modal
+	padding-top: 60px
+	text-align: center
+	max-width: 600px
+	h3
+		font-size: 24px
+		font-weight: 400
+	.button
+		padding: 10px 20px
+		margin-top: 10px
+		margin-bottom: 30px
+	.text-holder
+		padding: 0 10px
+		max-width: 350px
+		margin: 0 auto
+		input
+			margin-top: 11px
+			width: 100%
+			font-size: 1.3em
+			border: 1px solid #9b9b9b
+			position: relative
+			border-radius: 25px
+			padding: 3px 21px
+			margin: 0 auto
+			background: #fff
+			width: 100%
+			margin-bottom: 10px
+			outline: none
+			&::-webkit-input-placeholder
+				font-size: 0.95em
+			&::-moz-placeholder
+				font-size: 0.95em
+			&:-moz-placeholder
+				font-size: 0.95em
+			&:-ms-input-placeholder
+				font-size: 0.95em
+
+.products-table .rem-btn
+	display: inline-block
+	height: 20px
+	width: 20px
+	vertical-align: middle
+	margin-left: 10px
+	background: url(../img/icons/modal-close.svg) 50% 50% no-repeat
+	background-size: cover
+
+.article
+	padding: 20px 0
+	h1
+		font-size: 27px
+		color: #313131
+		text-transform: uppercase
+		margin-bottom: 10px
+	.image-holder
+		max-width: 780px
+		float: left
+		width: 100%
+		margin-right: 20px
+		margin-bottom: 10px
+	.article-container
+		min-height: 50vw
